@@ -1,0 +1,14 @@
+<head>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+    <h1>HTMX + FastAPI Example</h1>
+
+    <button hx-post="/clicked" hx-target="#result-box">
+        Click Me!
+    </button>
+
+    <div id="result-box">
+        Waiting for click...
+    </div>
+</body>
