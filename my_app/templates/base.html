@@ -1,20 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>My Super App</title>
-		<link href="/static/style.css" rel="stylesheet" >
-		<script src="https://unpkg.com/htmx.org@1.9.10"></script>
-		<script src="https://cdn.tailwindcss.com"></script>
-	</head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>WallPy</title>
+        <link href="/static/style.css" rel="stylesheet" />
+        <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="/static/script.js" defer></script>
+    </head>
 
-	<body class="bg-gray-100 text-gray-900">
+    <body class="bg-gray-100 text-gray-900">
+        <nav class="p-4 bg-white shadow">My App</nav>
 
-		<nav class="p-4 bg-white shadow">My App</nav>
-
-		<div class="container mx-auto p-4">
-			{% block content %}{% endblock %}
-		</div>
-
-	</body>
+        <div class="container mx-auto p-4">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
 </html>
